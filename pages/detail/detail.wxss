@@ -1,0 +1,62 @@
+.page-body-content {
+  align-items: center;
+  height: 1000rpx;
+  padding: 0rpx 10px;
+  font-size: 24rpx;
+}
+
+.meta {
+  display: inline-block;
+  width: 100%;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 54%;
+  padding-left: 50rpx;
+}
+
+.poster {
+  width: 30%;
+  max-height: 150px;
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
+  display: block;
+  font-size: 42rpx;
+  color: #444;
+  margin: 10rpx;
+}
+
+.info {
+  margin-top: 10rpx;
+}
+
+.favorite {
+  padding-left: 500rpx;
+  margin-top: 10rpx;
+}
+
+.summary {
+  width: 90%;
+  margin-top: 30rpx;
+  margin-left: 5%;
+}
+
+.label {
+  color: #666;
+  font-size: 30rpx;
+}
+
+.content {
+  width: 90%;
+  font-size: 30rpx;
+}
+
+.rateCount {
+  color: #666;
+}

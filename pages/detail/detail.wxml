@@ -1,0 +1,30 @@
+<scroll-view class="page-body" scroll-y="true">
+  <view>
+    <text class="title">{{movie.title}}({{movie.attrs.year[0]}})</text>
+  </view>
+  <view class="page-body-content">
+    <view class="meta">
+      <view class="text-content">
+        <text class="info">评分：{{movie.rating.average}}<text class="rateCount"> ({{movie.rating.numRaters}}人评价)</text>
+        </text>
+        <text class="info">导演：
+          <block wx:for="{{movie.attrs.director}}">{{item}}
+          </block>
+        </text>
+        <text class="info">主演:
+          <block wx:for="{{movie.attrs.cast}}">{{item}}
+            <br/>
+          </block>
+        </text>
+      </view>
+      <image class="poster" src="{{movie.image}}"></image>
+    </view>
+    <view class="favorite">
+      <button size="mini" bindtap="favorTap">{{favored}}</button>
+    </view>
+    <view class="summary">
+      <view class="label">剧情简介：</view>
+      <text class="content">{{movie.summary}}</text>
+    </view>
+  </view>
+</scroll-view>
